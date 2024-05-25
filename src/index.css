@@ -1,0 +1,85 @@
+.App {
+  text-align: center;
+}
+
+.movie-list, .favorite-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.movie-card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 40%;
+  border-radius: 1rem;
+  padding: 16px;
+  padding-bottom: 32px;
+  margin: 20px;
+  width: 300px;
+}
+
+.movie-card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.movie-card h3 {
+  margin: 0;
+}
+
+.movie-card div{
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+}
+
+button {
+  background-color: red;
+  border: none;
+  color: white;
+  padding: 10px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-top: 10px;
+  border-radius: 0.5rem;
+  transition-duration: 0.4s;
+}
+
+.movie-card div button:first-child{
+  background-color: grey;
+}
+.movie-card div button:first-child:hover{
+  background-color: rgb(81, 81, 81);
+  cursor: pointer;
+  color: white;
+}
+
+button:hover {
+  background-color: rgb(245, 100, 100);
+  cursor: pointer;
+  color: white;
+}
+
+.favorite-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.favorite-list .list{
+  display: flex;
+}
+
+.favorite-list p{
+  display: inline-block !important;
+  width: 100%;
+  text-align: center !important;
+}
+
+@media (max-width: 768px) {
+  .movie-card {
+    width: 100%;
+  }
+}
